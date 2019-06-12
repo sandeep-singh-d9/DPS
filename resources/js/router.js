@@ -2,11 +2,11 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 
-import HomeComponent from "./components/dps/HomeComponent";
+import HomeComponent from "./components/dps/HomeComponent"
 import  TestComponent from "./components/dps/testComponent"
-import  test from "./components/dps/test"
-import  model from "./components/dps/modelComponent"
-
+import ModelComponent from "./components/dps/modelComponent"
+import demoDiv from "./components/dps/demodivinsidedivComponent"
+import testnewComponent from './components/dps/testnewComponent'
 Vue.use(VueRouter)
 
 export default new VueRouter ({
@@ -20,12 +20,16 @@ export default new VueRouter ({
             component: TestComponent,
         },
         {
-            path: '/test',
-            component: test,
+            path: '/model',
+            component: ModelComponent,
         },
         {
-            path: '/model',
-            component: model,
+            path: '/demoDiv',
+            component: demoDiv,
+        },
+        {
+            path: '/test',
+            component: testnewComponent
         }
     ],
     mode: 'history',

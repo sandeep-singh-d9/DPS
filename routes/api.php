@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('save', 'HomeController@save');
 Route::get('getData', 'HomeController@getData');
+Route::resource('imageLibrary', 'API\ImageLibraryController');
